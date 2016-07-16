@@ -26,7 +26,7 @@ gulp.task('less', function(){
 })
 
 /*
-* Server start at port 1337 
+* Server starts at port 1337 
 */
 function startServer() {
     gulp.src('./')

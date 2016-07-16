@@ -5,16 +5,13 @@ var webserver = require('gulp-webserver');
 
 
 gulp.task('default', function() {
-  startServer();
   livereload.listen();
-  gulp.watch('./*.html', ['html']);
-  gulp.watch('./less/*.less', ['less']);
+  trackFiles();
 });
 
 gulp.task('html', function(){
 	gulp.src('./*.html')
     .pipe(livereload());
-
 })
 
 gulp.task('less', function(){
@@ -25,8 +22,24 @@ gulp.task('less', function(){
 
 })
 
+
+gulp.task('server', function() {
+  startServer();
+  livereload.listen();
+  gulp.watch('./*.html', ['html']);
+  gulp.watch('./less/*.less', ['less']);
+});
+
 /*
-* Server starts at port 1337 
+* This keeps track of the files
+*/
+function trackFiles() {
+  gulp.watch('./*.html', ['html']);
+  gulp.watch('./less/*.less', ['less']);
+}
+
+/*
+* Server starts at port 1337
 */
 function startServer() {
     gulp.src('./')

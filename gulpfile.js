@@ -32,9 +32,7 @@ gulp.task('less', function(){
 * This keeps track of the files
 */
 function fileTracker() {
-/*
-* When a file is modified, runs the task in the square brackets. 
-*/
+/* When a file is modified, runs the task in the square brackets */
   gulp.watch('./*.html', ['html']);
   gulp.watch('./less/*.less', ['less']);
 }

@@ -16,20 +16,12 @@ You must have node install globally.
 
 Keep in mind that if you want to use Livereload you must install an [addon] (https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei) to your browser.
 
-* Run just run Less + Livereload (Default task):
-
+* Run Less precompiler + Livereload:
   `gulp`
 
-* Run Less + Local server + Livereload:
+* Run Local server + Less + Livereload:
 
   `gulp server`
   
-* Run Less :
-
-  `gulp less`
-  
-* Run just Livereload :
-
-  `gulp html`
   
 

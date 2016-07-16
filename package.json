@@ -1,0 +1,31 @@
+{
+  "name": "gulp-awesome-config",
+  "version": "1.0.0",
+  "description": "gulp awesome config",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.1.0",
+    "gulp-livereload": "^3.8.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adriancast/gulp-awesome-config.git"
+  },
+  "keywords": [
+    "gulp",
+    "config",
+    "basic",
+    "awesome"
+  ],
+  "author": "Adrian Castellanos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adriancast/gulp-awesome-config/issues"
+  },
+  "homepage": "https://github.com/adriancast/gulp-awesome-config#readme"
+}

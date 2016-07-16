@@ -6,7 +6,7 @@ With this repo you will not spend time messing configuring your gulp file or ins
 # What includes?
 
 This configuration includes:
-
+* Local server to run Livereload
 * Less precompiler
 * Live reload
 
@@ -14,9 +14,9 @@ This configuration includes:
 You must have node install globally.
 
 
-Keep in mind that if you want to use Livereload you must install an [addon] (https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei) to your browser and run your project in a server. I use [xampp] (https://www.apachefriends.org/index.html).
+Keep in mind that if you want to use Livereload you must install an [addon] (https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei) to your browser.
 
-* Run Less + Livereload:
+* Run Less + Local server + Livereload:
 
   `gulp`
   

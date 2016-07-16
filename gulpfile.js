@@ -1,9 +1,18 @@
 var gulp = require('gulp');
 var livereload = require('gulp-livereload');
 var less = require('gulp-less');
+var webserver = require('gulp-webserver');
 
 
 gulp.task('default', function() {
+/*
+* Server start at port 1337
+*/
+  gulp.src('./')
+    .pipe(webserver({
+      open: true,
+      port: 1337
+    }));
   livereload.listen();
   gulp.watch('./*.html', ['html']);
   gulp.watch('./less/*.less', ['less']);

@@ -16,9 +16,12 @@ You must have node install globally.
 
 Keep in mind that if you want to use Livereload you must install an [addon] (https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei) to your browser.
 
+* Run just run Less + Livereload (Default task):
+  `gulp`
+
 * Run Less + Local server + Livereload:
 
-  `gulp`
+  `gulp server`
   
 * Run Less :
 
@@ -27,3 +30,5 @@ Keep in mind that if you want to use Livereload you must install an [addon] (htt
 * Run just Livereload :
 
   `gulp html`
+  
+

@@ -5,14 +5,7 @@ var webserver = require('gulp-webserver');
 
 
 gulp.task('default', function() {
-/*
-* Server start at port 1337
-*/
-  gulp.src('./')
-    .pipe(webserver({
-      open: true,
-      port: 1337
-    }));
+  startServer();
   livereload.listen();
   gulp.watch('./*.html', ['html']);
   gulp.watch('./less/*.less', ['less']);
@@ -31,3 +24,14 @@ gulp.task('less', function(){
     .pipe(livereload());
 
 })
+
+/*
+* Server start at port 1337
+*/
+function startServer() {
+    gulp.src('./')
+      .pipe(webserver({
+        open: true,
+        port: 1337
+      }));
+}

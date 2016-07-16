@@ -6,7 +6,13 @@ var webserver = require('gulp-webserver');
 
 gulp.task('default', function() {
   livereload.listen();
-  trackFiles();
+  fileTracker();
+});
+
+gulp.task('server', function() {
+  startServer();
+  livereload.listen();
+  fileTracker();
 });
 
 gulp.task('html', function(){
@@ -22,18 +28,10 @@ gulp.task('less', function(){
 
 })
 
-
-gulp.task('server', function() {
-  startServer();
-  livereload.listen();
-  gulp.watch('./*.html', ['html']);
-  gulp.watch('./less/*.less', ['less']);
-});
-
 /*
 * This keeps track of the files
 */
-function trackFiles() {
+function fileTracker() {
   gulp.watch('./*.html', ['html']);
   gulp.watch('./less/*.less', ['less']);
 }

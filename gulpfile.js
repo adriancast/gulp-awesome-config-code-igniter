@@ -20,6 +20,11 @@ gulp.task('html', function(){
     .pipe(livereload());
 })
 
+gulp.task('js', function(){
+	gulp.src('./*.js')
+    .pipe(livereload());
+})
+
 gulp.task('less', function(){
 	gulp.src('./less/*.less')
     .pipe(less())
@@ -35,6 +40,7 @@ function fileTracker() {
 /* When a file is modified, runs the task in the square brackets */
   gulp.watch('./*.html', ['html']);
   gulp.watch('./less/*.less', ['less']);
+  gulp.watch('./js/*.js', ['js']);
 }
 
 /*

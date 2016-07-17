@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var livereload = require('gulp-livereload');
 var less = require('gulp-less');
 var webserver = require('gulp-webserver');
+var image = require('gulp-image');
 
 
 gulp.task('default', function() {
@@ -33,14 +34,21 @@ gulp.task('less', function(){
 
 })
 
+gulp.task('image', function () {
+  gulp.src('./fixtures/*')
+    .pipe(image())
+    .pipe(gulp.dest('./img'));
+});
+
 /*
 * This keeps track of the files
 */
 function fileTracker() {
 /* When a file is modified, runs the task in the square brackets */
-  gulp.watch('./*.html', ['html']);
-  gulp.watch('./less/*.less', ['less']);
-  gulp.watch('./js/*.js', ['js']);
+  gulp.watch('*.html', ['html']);
+  gulp.watch('less/*.less', ['less']);
+  gulp.watch('js/*.js', ['js']);
+  gulp.watch('fixtures/*', ['image']);
 }
 
 /*

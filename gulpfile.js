@@ -48,7 +48,6 @@ function fileTracker() {
   gulp.watch('*.html', ['html']);
   gulp.watch('less/*.less', ['less']);
   gulp.watch('js/*.js', ['js']);
-  gulp.watch('fixtures/*', ['image']);
 }
 
 /*

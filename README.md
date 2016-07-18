@@ -25,9 +25,11 @@ Keep in mind that if you want to use Livereload you must install an [addon] (htt
 
   `gulp server`
   
-* Optimize your images:
+* To optimize your images just put your images on the fixtures folder. Then use:
 
-To use this feature just put your images on the fixtures folder. If you are running `gulp` or `gulp server` will automatically optimize your images and copy them to the img folder.
+  `gulp image`
+
+
   
   
 

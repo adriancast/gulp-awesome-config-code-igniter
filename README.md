@@ -8,7 +8,8 @@ With this repo you will not spend time messing configuring your gulp file or ins
 This configuration includes:
 * Local server to run Livereload
 * Less precompiler
-* Live reload
+* Live reload 
+* Image optimizer
 
 # How to use it:
 You must have node install globally.

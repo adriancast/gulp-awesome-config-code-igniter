@@ -56,6 +56,7 @@ function fileTracker() {
 function startServer() {
     gulp.src('./')
       .pipe(webserver({
+        baseDir: "build"
         open: true,
         port: 1337
       }));
